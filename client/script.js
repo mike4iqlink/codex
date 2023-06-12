@@ -91,6 +91,8 @@ const handleSubmit = async (e) => {
     method: 'POST',
         headers: {
             'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': 'https://codex-git-main-mike4iqlink.vercel.app/'
+
         },
         body: JSON.stringify({
             prompt: data.get('prompt')
