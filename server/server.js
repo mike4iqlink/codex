@@ -25,6 +25,8 @@ app.get('/', async (req, res) => {
 
 app.post('/', async (req, res) => {
   try {
+    res.header('Access-Control-Allow-Origin','https://codex-git-main-mike4iqlink.vercel.app/');
+    
     const prompt = req.body.prompt;
 
     const response = await openai.createCompletion({
