@@ -13,7 +13,8 @@ const openai = new OpenAIApi(configuration);
 
 const app = express()
 //app.use(cors({origin:"*"}))
-app.use(cors({origin:"https://codex-git-main-mike4iqlink.vercel.app/"}))
+//app.use(cors({origin:"https://codex-git-main-mike4iqlink.vercel.app/"}))
+app.use(cors({origin:"https://codex-0jdj.onrender.com/"}))
 app.use(express.json())
 
 app.get('/', async (req, res) => {
